@@ -1,0 +1,89 @@
+20241113 13:10:53.576200Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 13:10:53.585165Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 13:10:53.589113Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 13:10:53.589137Z INFO  count: 2 - ApiCommon.cpp:199
+20241113 13:10:53.589404Z INFO  server start listen on:For http://%0.0.0.0:8081 - main.cpp:167
+20241113 13:10:53.589419Z INFO  now enter the event loop... - main.cpp:170
+20241113 13:10:58.793887Z INFO  url: /api/login - HttpConn.cpp:237
+20241113 13:10:58.793963Z INFO  into - HttpConn.cpp:409
+20241113 13:10:58.794566Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 13:10:58.794597Z INFO  mysql-pwd: ffb0e777a539c14e061f9ceceb6712c6, user-pwd: ffb0e777a539c14e061f9ceceb6712c6 - ApiLogin.cpp:95
+20241113 13:10:58.794756Z INFO  执行: select count(*) from user_file_list where user='ameng' - ApiCommon.cpp:127
+20241113 13:10:58.795028Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 13:10:58.795042Z INFO  count: 1 - ApiCommon.cpp:133
+20241113 13:10:58.795143Z INFO  FILE_USER_COUNT: 1 - ApiLogin.cpp:168
+20241113 13:10:58.795157Z INFO  执行: select count(*) from share_picture_list where user='ameng' - ApiCommon.cpp:161
+20241113 13:10:58.795702Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 13:10:58.795718Z INFO  count: 1 - ApiCommon.cpp:167
+20241113 13:10:58.795800Z INFO  SHARE_PIC_COUNT: 1 - ApiLogin.cpp:183
+20241113 13:10:58.795851Z INFO  into - HttpConn.cpp:504
+20241113 13:10:58.894064Z INFO  conn_uuid: 1, pConn: 0x1697200 - HttpConn.cpp:524
+20241113 13:10:58.894101Z INFO  send: HTTP/1.1 200 OK
+Connection:close
+Content-Length:54
+Content-Type:application/json;charset=utf-8
+
+{"code":0,"token":"nwlrbbmqbhcdarzowkkyhiddqscdxrjm"}
+ - HttpConn.cpp:526
+20241113 13:10:58.894172Z INFO  write complete - HttpConn.cpp:498
+20241113 13:10:58.998217Z INFO  url: /api/myfiles?cmd=count - HttpConn.cpp:237
+20241113 13:10:58.998272Z INFO  url: /api/myfiles?cmd=count, cmd = count - ApiMyfiles.cpp:293
+20241113 13:10:58.998528Z INFO  handleUserFilesCount ok, count:1 - ApiMyfiles.cpp:316
+20241113 13:10:58.998571Z INFO  write complete - HttpConn.cpp:498
+20241113 13:10:59.010091Z INFO  url: /api/myfiles?cmd=normal - HttpConn.cpp:237
+20241113 13:10:59.010106Z INFO  url: /api/myfiles?cmd=normal, cmd = normal - ApiMyfiles.cpp:293
+20241113 13:10:59.010146Z INFO  user_name:ameng, token:nwlrbbmqbhcdarzowkkyhiddqscdxrjm, start:0, count:10 - ApiMyfiles.cpp:340
+20241113 13:10:59.010317Z INFO  getUserFileList into - ApiMyfiles.cpp:175
+20241113 13:10:59.010447Z INFO  执行: select user_file_list.*, file_info.url, file_info.size,  file_info.type from file_info, user_file_list where user = 'ameng'             and file_info.md5 = user_file_list.md5 limit 0, 10 - ApiMyfiles.cpp:237
+20241113 13:10:59.011144Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 13:10:59.011304Z INFO  write complete - HttpConn.cpp:498
+20241113 13:11:16.092108Z INFO  url: /api/myfiles?cmd=normal - HttpConn.cpp:237
+20241113 13:11:16.092124Z INFO  url: /api/myfiles?cmd=normal, cmd = normal - ApiMyfiles.cpp:293
+20241113 13:11:16.092160Z INFO  user_name:ameng, token:nwlrbbmqbhcdarzowkkyhiddqscdxrjm, start:0, count:10 - ApiMyfiles.cpp:340
+20241113 13:11:16.092289Z INFO  getUserFileList into - ApiMyfiles.cpp:175
+20241113 13:11:16.092460Z INFO  执行: select user_file_list.*, file_info.url, file_info.size,  file_info.type from file_info, user_file_list where user = 'ameng'             and file_info.md5 = user_file_list.md5 limit 0, 10 - ApiMyfiles.cpp:237
+20241113 13:11:16.092934Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 13:11:16.093044Z INFO  write complete - HttpConn.cpp:498
+20241113 13:11:16.094472Z INFO  url: /api/myfiles?cmd=count - HttpConn.cpp:237
+20241113 13:11:16.094483Z INFO  url: /api/myfiles?cmd=count, cmd = count - ApiMyfiles.cpp:293
+20241113 13:11:16.094622Z INFO  handleUserFilesCount ok, count:1 - ApiMyfiles.cpp:316
+20241113 13:11:16.094654Z INFO  write complete - HttpConn.cpp:498
+20241113 13:11:22.814350Z INFO  url: /api/sharepic?cmd=normal - HttpConn.cpp:237
+20241113 13:11:22.814366Z INFO  cmd = normal - ApiSharepicture.cpp:667
+20241113 13:11:22.814617Z INFO  执行: select share_picture_list.user, share_picture_list.filemd5, share_picture_list.file_name,share_picture_list.urlmd5, share_picture_list.pv,         share_picture_list.create_time, file_info.size from file_info, share_picture_list where share_picture_list.user = 'ameng' and          file_info.md5 = share_picture_list.filemd5 limit 0, 10 - ApiSharepicture.cpp:261
+20241113 13:11:22.815149Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 13:11:22.815238Z INFO  str_json:{
+   "code" : 0,
+   "count" : 1,
+   "files" : [
+      {
+         "create_time" : "2024-11-01 20:12:58",
+         "file_name" : "111.png",
+         "filemd5" : "508cb7a610ce2837a034d6d09091ec29",
+         "pv" : 0,
+         "size" : 1504726,
+         "urlmd5" : "owfrxsjybldbefsarcbynecdyggxxpkl",
+         "user" : "ameng"
+      }
+   ],
+   "total" : 1
+}
+ - ApiSharepicture.cpp:306
+20241113 13:11:22.815280Z INFO  write complete - HttpConn.cpp:498
+20241113 13:11:25.112490Z INFO  url: /api/sharefiles?cmd=count - HttpConn.cpp:237
+20241113 13:11:25.112504Z INFO   post_data:  - ApiSharefiles.cpp:377
+20241113 13:11:25.112511Z INFO  cmd = count - ApiSharefiles.cpp:381
+20241113 13:11:25.112691Z INFO  write complete - HttpConn.cpp:498
+20241113 13:11:25.112741Z INFO  url: /api/sharefiles?cmd=normal - HttpConn.cpp:237
+20241113 13:11:25.112745Z INFO   post_data: {"count":10,"start":0} - ApiSharefiles.cpp:377
+20241113 13:11:25.112749Z INFO  cmd = normal - ApiSharefiles.cpp:381
+20241113 13:11:25.112828Z INFO  执行: select share_file_list.*, file_info.url, file_info.size, file_info.type from file_info,         share_file_list where file_info.md5 = share_file_list.md5 limit 0, 10 - ApiSharefiles.cpp:147
+20241113 13:11:25.113297Z INFO  row_num: 2 - DBPool.cpp:332
+20241113 13:11:25.113464Z INFO  write complete - HttpConn.cpp:498
+20241113 13:11:29.114457Z INFO  url: /api/sharefiles?cmd=pvdesc - HttpConn.cpp:237
+20241113 13:11:29.114468Z INFO   post_data: {"count":10,"start":0} - ApiSharefiles.cpp:377
+20241113 13:11:29.114475Z INFO  cmd = pvdesc - ApiSharefiles.cpp:381
+20241113 13:11:29.114695Z INFO  sql_num: 2, redis_num: 0 - ApiSharefiles.cpp:244
+20241113 13:11:29.114855Z INFO  执行: select md5, file_name, pv from share_file_list order by pv desc - ApiSharefiles.cpp:257
+20241113 13:11:29.115361Z INFO  row_num: 2 - DBPool.cpp:332
+20241113 13:11:29.116130Z INFO  write complete - HttpConn.cpp:498

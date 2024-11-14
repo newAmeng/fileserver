@@ -1,0 +1,80 @@
+20241113 10:33:31.035111Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 10:33:31.044452Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 10:33:31.052688Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 10:33:31.052721Z INFO  count: 2 - ApiCommon.cpp:199
+20241113 10:33:31.053044Z INFO  server start listen on:For http://%0.0.0.0:8081 - main.cpp:165
+20241113 10:33:31.053060Z INFO  now enter the event loop... - main.cpp:168
+20241113 10:42:56.955710Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 10:42:56.965464Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 10:42:56.969518Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 10:42:56.969542Z INFO  count: 2 - ApiCommon.cpp:199
+20241113 10:42:56.970258Z INFO  server start listen on:For http://%0.0.0.0:8081 - main.cpp:165
+20241113 10:42:56.970278Z INFO  now enter the event loop... - main.cpp:168
+20241113 10:49:46.533543Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 10:49:46.542526Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 10:49:46.547087Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 10:49:46.547108Z INFO  count: 2 - ApiCommon.cpp:199
+20241113 10:49:46.547410Z INFO  server start listen on:For http://%0.0.0.0:8081 - main.cpp:165
+20241113 10:49:46.547429Z INFO  now enter the event loop... - main.cpp:168
+20241113 11:05:25.836012Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 11:05:25.892080Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 11:05:25.952785Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 11:05:25.952817Z INFO  count: 2 - ApiCommon.cpp:199
+20241113 11:05:25.953571Z INFO  server start listen on:For http://%0.0.0.0:8081 - main.cpp:165
+20241113 11:05:25.953592Z INFO  now enter the event loop... - main.cpp:168
+20241113 11:05:33.804021Z INFO  url: / - HttpConn.cpp:233
+20241113 11:05:33.804038Z ERROR url unknown, url= / - HttpConn.cpp:274
+20241113 11:05:34.952084Z INFO  url: / - HttpConn.cpp:233
+20241113 11:05:34.952127Z ERROR url unknown, url= / - HttpConn.cpp:274
+20241113 11:05:34.999846Z INFO  url: / - HttpConn.cpp:233
+20241113 11:05:34.999871Z ERROR url unknown, url= / - HttpConn.cpp:274
+20241113 11:05:35.492669Z INFO  url: / - HttpConn.cpp:233
+20241113 11:05:35.492692Z ERROR url unknown, url= / - HttpConn.cpp:274
+20241113 11:05:40.572522Z INFO  url: / - HttpConn.cpp:233
+20241113 11:05:40.572548Z ERROR url unknown, url= / - HttpConn.cpp:274
+20241113 11:05:41.068485Z INFO  url: / - HttpConn.cpp:233
+20241113 11:05:41.068508Z ERROR url unknown, url= / - HttpConn.cpp:274
+20241113 11:23:23.099920Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 11:23:23.108674Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 11:23:23.112615Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 11:23:23.112642Z INFO  count: 2 - ApiCommon.cpp:199
+20241113 11:23:23.113309Z INFO  server start listen on:For http://%0.0.0.0:8081 - main.cpp:165
+20241113 11:23:23.113326Z INFO  now enter the event loop... - main.cpp:168
+20241113 11:34:26.409190Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 11:34:26.417802Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 11:34:26.422029Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 11:34:26.422058Z INFO  count: 2 - ApiCommon.cpp:199
+20241113 11:34:26.422754Z INFO  server start listen on:For http://%0.0.0.0:8081 - main.cpp:165
+20241113 11:34:26.422771Z INFO  now enter the event loop... - main.cpp:168
+20241113 11:48:52.651655Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 11:48:52.660137Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 11:48:52.664080Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 11:48:52.664103Z INFO  count: 2 - ApiCommon.cpp:199
+20241113 11:48:52.664827Z INFO  server start listen on:For http://%0.0.0.0:8081 - main.cpp:167
+20241113 11:48:52.664842Z INFO  now enter the event loop... - main.cpp:170
+20241113 12:28:50.311848Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 12:28:50.331719Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 12:31:01.156158Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 12:31:01.169984Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 12:31:01.174653Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 12:31:01.174680Z INFO  count: 2 - ApiCommon.cpp:199
+20241113 12:31:01.179020Z INFO  server start listen on:For http://%0.0.0.0:8081 - main.cpp:167
+20241113 12:31:01.179042Z INFO  now enter the event loop... - main.cpp:170
+20241113 12:38:13.049890Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 12:38:13.065368Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 12:38:40.177507Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 12:38:40.177563Z INFO  count: 2 - ApiCommon.cpp:199
+20241113 12:38:58.061137Z INFO  server start listen on:For http://%0.0.0.0:8081 - main.cpp:167
+20241113 12:38:59.856873Z INFO  now enter the event loop... - main.cpp:170
+20241113 12:45:35.958904Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 12:45:35.968345Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 12:45:35.972725Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 12:45:35.972749Z INFO  count: 2 - ApiCommon.cpp:199
+20241113 12:45:35.973016Z INFO  server start listen on:For http://%0.0.0.0:8081 - main.cpp:167
+20241113 12:45:35.973030Z INFO  now enter the event loop... - main.cpp:170
+20241113 12:58:14.115592Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 12:58:14.125031Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241113 12:58:14.129873Z INFO  row_num: 1 - DBPool.cpp:332
+20241113 12:58:14.129897Z INFO  count: 2 - ApiCommon.cpp:199
+20241113 12:58:14.130164Z INFO  server start listen on:For http://%0.0.0.0:8081 - main.cpp:167
+20241113 12:58:14.130181Z INFO  now enter the event loop... - main.cpp:170
