@@ -6,8 +6,6 @@
  * 4.其他库头文件
  * 5.本项目内头文件
 */
-#include <map>
-#include <string>
 using std::string; // 可以在整个cc文件和h文件内使用using， 禁止使用using namespace xx污染命名空间
 
 #include "netlib.h"

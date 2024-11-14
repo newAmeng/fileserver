@@ -87,3 +87,42 @@ Content-Type:application/json;charset=utf-8
 20241113 13:11:29.114855Z INFO  执行: select md5, file_name, pv from share_file_list order by pv desc - ApiSharefiles.cpp:257
 20241113 13:11:29.115361Z INFO  row_num: 2 - DBPool.cpp:332
 20241113 13:11:29.116130Z INFO  write complete - HttpConn.cpp:498
+20241114 02:49:39.738792Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241114 02:49:39.748099Z INFO  db_host:127.0.0.1, db_port:3306, db_dbname:fileserver, db_username:root, db_password:@WangMeng9872 - DBPool.cpp:635
+20241114 02:49:39.752674Z INFO  row_num: 1 - DBPool.cpp:332
+20241114 02:49:39.752709Z INFO  count: 2 - ApiCommon.cpp:199
+20241114 02:49:39.753457Z INFO  server start listen on:For http://%0.0.0.0:8081 - main.cpp:167
+20241114 02:49:39.753477Z INFO  now enter the event loop... - main.cpp:170
+20241114 02:49:52.590952Z INFO  url: /api/login - HttpConn.cpp:237
+20241114 02:49:52.591028Z INFO  into - HttpConn.cpp:409
+20241114 02:49:52.591625Z INFO  row_num: 1 - DBPool.cpp:332
+20241114 02:49:52.591642Z INFO  mysql-pwd: ffb0e777a539c14e061f9ceceb6712c6, user-pwd: ffb0e777a539c14e061f9ceceb6712c6 - ApiLogin.cpp:95
+20241114 02:49:52.591828Z INFO  执行: select count(*) from user_file_list where user='ameng' - ApiCommon.cpp:127
+20241114 02:49:52.592155Z INFO  row_num: 1 - DBPool.cpp:332
+20241114 02:49:52.592176Z INFO  count: 1 - ApiCommon.cpp:133
+20241114 02:49:52.592277Z INFO  FILE_USER_COUNT: 1 - ApiLogin.cpp:168
+20241114 02:49:52.592286Z INFO  执行: select count(*) from share_picture_list where user='ameng' - ApiCommon.cpp:161
+20241114 02:49:52.592649Z INFO  row_num: 1 - DBPool.cpp:332
+20241114 02:49:52.592669Z INFO  count: 1 - ApiCommon.cpp:167
+20241114 02:49:52.592775Z INFO  SHARE_PIC_COUNT: 1 - ApiLogin.cpp:183
+20241114 02:49:52.592828Z INFO  into - HttpConn.cpp:504
+20241114 02:49:52.691118Z INFO  conn_uuid: 1, pConn: 0x1487200 - HttpConn.cpp:524
+20241114 02:49:52.691165Z INFO  send: HTTP/1.1 200 OK
+Connection:close
+Content-Length:54
+Content-Type:application/json;charset=utf-8
+
+{"code":0,"token":"nwlrbbmqbhcdarzowkkyhiddqscdxrjm"}
+ - HttpConn.cpp:526
+20241114 02:49:52.691223Z INFO  write complete - HttpConn.cpp:498
+20241114 02:49:52.862974Z INFO  url: /api/myfiles?cmd=count - HttpConn.cpp:237
+20241114 02:49:52.863030Z INFO  url: /api/myfiles?cmd=count, cmd = count - ApiMyfiles.cpp:293
+20241114 02:49:52.863316Z INFO  handleUserFilesCount ok, count:1 - ApiMyfiles.cpp:316
+20241114 02:49:52.863393Z INFO  write complete - HttpConn.cpp:498
+20241114 02:49:52.918940Z INFO  url: /api/myfiles?cmd=normal - HttpConn.cpp:237
+20241114 02:49:52.918950Z INFO  url: /api/myfiles?cmd=normal, cmd = normal - ApiMyfiles.cpp:293
+20241114 02:49:52.918987Z INFO  user_name:ameng, token:nwlrbbmqbhcdarzowkkyhiddqscdxrjm, start:0, count:10 - ApiMyfiles.cpp:340
+20241114 02:49:52.919128Z INFO  getUserFileList into - ApiMyfiles.cpp:175
+20241114 02:49:52.919231Z INFO  执行: select user_file_list.*, file_info.url, file_info.size,  file_info.type from file_info, user_file_list where user = 'ameng'             and file_info.md5 = user_file_list.md5 limit 0, 10 - ApiMyfiles.cpp:237
+20241114 02:49:52.919900Z INFO  row_num: 1 - DBPool.cpp:332
+20241114 02:49:52.920045Z INFO  write complete - HttpConn.cpp:498
